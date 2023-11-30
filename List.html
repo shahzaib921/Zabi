@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+#main{
+    list-style-type: none;
+    display: flex;
+    font-style: italic;
+    background-color: blue;
+    color: white;
+    line-height: 50px;  
+}
+.same{
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.secondery{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    color: black;    
+}
+#main li:hover .secondery{
+    display: block;
+}
+.same .secondery:hover{
+    background-color: greenyellow;
+} 
+.secondery li{
+    border: 1px solid black;
+    width: 195px;
+}
+</style>
+</head>
+<body>   
+<nav>
+    <ol id="main">
+        <li class="same">
+            Name
+            <ol class="secondery">
+                <li>Shahzaib</li>
+                <li>Asad</li>
+                <li>Rehan</li>
+                <li>Usman</li>
+            </ol>
+        </li>
+        <li class="same">
+            Roll.no
+            <ol class="secondery">
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+            </ol>
+        </li>
+        <li class="same">
+            Education
+            <ol class="secondery">
+                <li>DAE Electrical</li>
+                <li>I.com</li>
+                <li>FSC</li>
+                <li>FSC</li>
+            </ol>
+        </li>
+        <li class="same">
+            Age
+            <ol class="secondery">
+                <li>19</li>
+                <li>22</li>
+                <li>19</li>
+                <li>18</li>
+            </ol>
+        </li>
+        <li class="same">
+            Work
+            <ol class="secondery">
+                <li>Programmer</li>
+                <li>Graphic Designer</li>
+                <li>Developer</li>
+                <li>Artificial Intelligence </li>
+            </ol>
+        </li>
+    </ol>
+</nav>
+</body>
+</html>
