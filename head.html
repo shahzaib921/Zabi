@@ -1,0 +1,107 @@
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #main{
+        display: flex; 
+        list-style-type: none;
+        background-color: lightcoral;
+        line-height: 35px;
+        text-align: center;
+        color: white;
+    }
+    .body{
+        flex-grow: 1;
+        position: relative;
+        cursor: pointer;
+    }
+    .body:hover{
+        color: black;
+        background-color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    li:hover::after{
+        transform: scale(1);
+    }
+    li::after{
+       content: '';
+       transition: transform 0.7s linear 0s;
+       transform: scale(0);
+       position: absolute;
+       height: 2px;
+       background-color: black;
+       width: 100%;
+       bottom: 0;
+       left: 0;
+    }
+    .iner-body{
+       display: none;
+       position: absolute;
+       list-style-type: none;
+       width: 175px;
+       border-left: 2px solid black;
+       border-right: 2px solid black;
+       border-bottom: 2px solid black;
+       margin-left: 5px;
+    }
+    #main .body:hover .iner-body{
+        display: block;
+        background-color: lightpink;
+        color: black;
+    }
+    .iner-body:hover{
+        background-color: red;
+    }
+
+</style>
+
+
+
+<header>
+    <nav>
+        <ol id="main">
+            <li class="body">
+                Shahzaib
+                <ol class="iner-body">
+                    <li>Age-19</li>
+                    <li>Arain</li>
+                    <li>Programer</li>
+                </ol>
+            </li>
+            <li class="body">
+                Asad
+                <ol class="iner-body">
+                    <li>Age-22</li>
+                    <li>Jutt</li>
+                    <li>Graphic designing</li>
+                </ol>
+            </li>
+            <li class="body">
+                Tuseef
+                <ol class="iner-body">
+                    <li>Age-19</li>
+                    <li>Jutt</li>
+                    <li>A.I</li>
+                </ol>
+            </li>
+            <li class="body">
+                Rehan
+                <ol class="iner-body">
+                    <li>Age-19</li>
+                    <li>Arain</li>
+                    <li>Developer</li>
+                </ol>
+            </li>
+            <li class="body">
+                Arslan
+                <ol class="iner-body">
+                    <li>Age-20</li>
+                    <li>Jutt</li>
+                    <li>Digital marketing</li>
+                </ol>
+            </li>
+        </ol>
+    </nav>
+</header>
